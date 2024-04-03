@@ -2,7 +2,7 @@ public class Subtraction {
     private float firstValue;
     private float secondValue;
 
-    public Subtraction(int firstValue, int secondValue) {
+    public Subtraction(float firstValue, float secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }

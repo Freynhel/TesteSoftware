@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int operation = -1;
-        int firstValue = 0;
-        int secondValue = 0;
-        float result = 0;
+        float firstValue;
+        float secondValue;
+        float result;
         int validationFlag = 0;
 
         String operationFeedback = "";

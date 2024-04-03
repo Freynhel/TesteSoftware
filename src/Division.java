@@ -2,7 +2,7 @@ public class Division {
     private float firstValue;
     private float secondValue;
 
-    public Division(int firstValue, int secondValue) {
+    public Division(float firstValue, float secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }

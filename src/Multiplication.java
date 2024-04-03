@@ -2,7 +2,7 @@ public class Multiplication {
     private float firstValue;
     private float secondValue;
 
-    public Multiplication(int firstValue, int secondValue) {
+    public Multiplication(float firstValue, float secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }

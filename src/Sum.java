@@ -1,19 +1,19 @@
 public class Sum {
-    private int firstValue;
-    private int secondValue;
+    private float firstValue;
+    private float secondValue;
 
-    public Sum(int firstValue, int secondValue) {
+    public Sum(float firstValue, float secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }
 
-    public int calc() {
+    public float calc() {
         return firstValue + secondValue;
     }
 
     // getters
-    public int getFirstValue() { return firstValue; }
-    public int getSecondValue() { return secondValue; }
+    public float getFirstValue() { return firstValue; }
+    public float getSecondValue() { return secondValue; }
     // setters
     public void setFirstValue(int firstValue) { this.firstValue = firstValue; }
     public void setSecondValue(int secondValue) { this.secondValue = secondValue; }
