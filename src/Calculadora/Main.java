@@ -1,5 +1,5 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+package Calculadora;
+
 import java.util.Scanner;
 import java.util.Locale;
 
@@ -17,10 +17,10 @@ public class Main {
         String operationFeedback = "";
         String menu =
             "Please, select one operation: \n" +
-            "1 - Sum \n" +
-            "2 - Subtraction \n" +
-            "3 - Multiplication \n" +
-            "4 - Division \n" +
+            "1 - Calculadora.Sum \n" +
+            "2 - Calculadora.Subtraction \n" +
+            "3 - Calculadora.Multiplication \n" +
+            "4 - Calculadora.Division \n" +
             "5 - All Operations \n" +
             "0 - Exit \n" +
             "Operation: ";

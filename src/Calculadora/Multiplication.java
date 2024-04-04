@@ -1,14 +1,16 @@
-public class Sum {
+package Calculadora;
+
+public class Multiplication {
     private double firstValue;
     private double secondValue;
 
-    public Sum(double firstValue, double secondValue) {
+    public Multiplication(double firstValue, double secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }
 
     public double calc() {
-        return firstValue + secondValue;
+        return firstValue * secondValue;
     }
 
     // getters
