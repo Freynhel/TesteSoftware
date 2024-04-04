@@ -1,18 +1,18 @@
 public class Subtraction {
-    private float firstValue;
-    private float secondValue;
+    private double firstValue;
+    private double secondValue;
 
-    public Subtraction(float firstValue, float secondValue) {
+    public Subtraction(double firstValue, double secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }
 
-    public float calc() {
+    public double calc() {
         return firstValue - secondValue;
     }
     // getters
-    public float getFirstValue() { return firstValue; }
-    public float getSecondValue() { return secondValue; }
+    public double getFirstValue() { return firstValue; }
+    public double getSecondValue() { return secondValue; }
     // setters
     public void setFirstValue(int firstValue) { this.firstValue = firstValue; }
     public void setSecondValue(int secondValue) { this.secondValue = secondValue; }

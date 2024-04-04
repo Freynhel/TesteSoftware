@@ -1,13 +1,17 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+
         int operation = -1;
-        float firstValue;
-        float secondValue;
-        float result;
+        double firstValue;
+        double secondValue;
+        double result = 0;
         int validationFlag = 0;
 
         String operationFeedback = "";
@@ -25,8 +29,6 @@ public class Main {
 
         while (operation != 0) {
             System.out.println(menu);
-
-            Scanner scanner = new Scanner(System.in);
             operation = scanner.nextInt();
 
             if (operation < 0 && operation > 5) {
@@ -40,10 +42,10 @@ public class Main {
             }
 
             System.out.println("Enter the first value: ");
-            firstValue = scanner.nextInt();
+            firstValue = scanner.nextDouble();
 
             System.out.println("Enter the second value: ");
-            secondValue = scanner.nextInt();
+            secondValue = scanner.nextDouble();
 
             switch (operation) {
                 case 1:
@@ -71,15 +73,15 @@ public class Main {
                     result = div.calc();
                     break;
                 case 5:
-                    sum = new Sum(firstValue, secondValue);
-                    sub = new Subtraction(firstValue, secondValue);
-                    mult = new Multiplication(firstValue, secondValue);
-                    div = new Division(firstValue, secondValue);
+                    Sum sumAll = new Sum(firstValue, secondValue);
+                    Subtraction subAll = new Subtraction(firstValue, secondValue);
+                    Multiplication multAll = new Multiplication(firstValue, secondValue);
+                    Division divAll = new Division(firstValue, secondValue);
 
-                    System.out.println("The sum is: " + sum.calc());
-                    System.out.println("The subtraction is: " + sub.calc());
-                    System.out.println("The multiplication is: " + mult.calc());
-                    System.out.println("The division is: " + div.calc());
+                    System.out.println("The sum is: " + sumAll.calc());
+                    System.out.println("The subtraction is: " + subAll.calc());
+                    System.out.println("The multiplication is: " + multAll.calc());
+                    System.out.println("The division is: " + divAll.calc());
                     break;
 
                 default:

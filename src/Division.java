@@ -1,13 +1,13 @@
 public class Division {
-    private float firstValue;
-    private float secondValue;
+    private double firstValue;
+    private double secondValue;
 
-    public Division(float firstValue, float secondValue) {
+    public Division(double firstValue, double secondValue) {
         this.firstValue = firstValue;
         this.secondValue = secondValue;
     }
 
-    public float calc() {
+    public double calc() {
         return firstValue / secondValue;
     }
 
@@ -16,8 +16,8 @@ public class Division {
     }
 
     // getters
-    public float getFirstValue() { return firstValue; }
-    public float getSecondValue() { return secondValue; }
+    public double getFirstValue() { return firstValue; }
+    public double getSecondValue() { return secondValue; }
     // setters
     public void setFirstValue(int firstValue) { this.firstValue = firstValue; }
     public void setSecondValue(int secondValue) { this.secondValue = secondValue; }
